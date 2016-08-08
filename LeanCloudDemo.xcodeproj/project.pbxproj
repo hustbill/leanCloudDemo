@@ -16,9 +16,31 @@
 		E02347581B6BE242004F2DBE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02347571B6BE242004F2DBE /* ResetPasswordViewController.swift */; };
 		E023475E1B6BE32A004F2DBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023475D1B6BE32A004F2DBE /* HomeViewController.swift */; };
 		E02347601B6BE423004F2DBE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023475F1B6BE423004F2DBE /* LoginViewController.swift */; };
+		FF36F27F0AF8565A222A8CE6 /* Pods_LeanCloudDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F43BE352DC0A91FB4645EA /* Pods_LeanCloudDemo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A9D673E01D5905FF00B7331E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D673DA1D5905FF00B7331E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E5A3D448DEE0B7B1EE7C936477F1170;
+			remoteInfo = Alamofire;
+		};
+		A9D673E21D5905FF00B7331E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D673DA1D5905FF00B7331E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 865EA1981893AE41F66A7E828F1A1ACE;
+			remoteInfo = LeanCloud;
+		};
+		A9D673E41D5905FF00B7331E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D673DA1D5905FF00B7331E /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3D16B37F6451930173409C83645F5EC;
+			remoteInfo = "Pods-LeanCloudDemo";
+		};
 		E023471F1B677CD3004F2DBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E02347011B677CD3004F2DBE /* Project object */;
@@ -29,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F43BE352DC0A91FB4645EA /* Pods_LeanCloudDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeanCloudDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FC3631490C59627618ED94 /* Pods-LeanCloudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanCloudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeanCloudDemo/Pods-LeanCloudDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6D8ECF70572D1BE36DF1CE /* Pods-LeanCloudDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanCloudDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeanCloudDemo/Pods-LeanCloudDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A9D673DA1D5905FF00B7331E /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		E02347091B677CD3004F2DBE /* LeanCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeanCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E023470D1B677CD3004F2DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E023470E1B677CD3004F2DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF36F27F0AF8565A222A8CE6 /* Pods_LeanCloudDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E2FC89CACE80DAB2F9CD529 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59FC3631490C59627618ED94 /* Pods-LeanCloudDemo.debug.xcconfig */,
+				9B6D8ECF70572D1BE36DF1CE /* Pods-LeanCloudDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9D673DB1D5905FF00B7331E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D673E11D5905FF00B7331E /* Alamofire.framework */,
+				A9D673E31D5905FF00B7331E /* LeanCloud.framework */,
+				A9D673E51D5905FF00B7331E /* Pods_LeanCloudDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E02347001B677CD3004F2DBE = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +115,7 @@
 				E023470B1B677CD3004F2DBE /* ParseDemo */,
 				E02347211B677CD3004F2DBE /* ParseDemoTests */,
 				E023470A1B677CD3004F2DBE /* Products */,
+				3E2FC89CACE80DAB2F9CD529 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +172,8 @@
 		E023472E1B679009004F2DBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9D673DA1D5905FF00B7331E /* Pods.xcodeproj */,
+				09F43BE352DC0A91FB4645EA /* Pods_LeanCloudDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E02347281B677CD3004F2DBE /* Build configuration list for PBXNativeTarget "LeanCloudDemo" */;
 			buildPhases = (
+				7067ADBF88C4EA6FA133EF62 /* [CP] Check Pods Manifest.lock */,
 				E02347051B677CD3004F2DBE /* Sources */,
 				E02347061B677CD3004F2DBE /* Frameworks */,
 				E02347071B677CD3004F2DBE /* Resources */,
+				548019BF67D1E28B4C259732 /* [CP] Embed Pods Frameworks */,
+				946E9E13AF4E12706F8EC36D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +249,12 @@
 			mainGroup = E02347001B677CD3004F2DBE;
 			productRefGroup = E023470A1B677CD3004F2DBE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A9D673DB1D5905FF00B7331E /* Products */;
+					ProjectRef = A9D673DA1D5905FF00B7331E /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E02347081B677CD3004F2DBE /* LeanCloudDemo */,
@@ -204,6 +262,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A9D673E11D5905FF00B7331E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = A9D673E01D5905FF00B7331E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9D673E31D5905FF00B7331E /* LeanCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LeanCloud.framework;
+			remoteRef = A9D673E21D5905FF00B7331E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9D673E51D5905FF00B7331E /* Pods_LeanCloudDemo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_LeanCloudDemo.framework;
+			remoteRef = A9D673E41D5905FF00B7331E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E02347071B677CD3004F2DBE /* Resources */ = {
@@ -224,6 +306,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		548019BF67D1E28B4C259732 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeanCloudDemo/Pods-LeanCloudDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7067ADBF88C4EA6FA133EF62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		946E9E13AF4E12706F8EC36D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeanCloudDemo/Pods-LeanCloudDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E02347051B677CD3004F2DBE /* Sources */ = {
@@ -359,6 +489,7 @@
 		};
 		E02347291B677CD3004F2DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FC3631490C59627618ED94 /* Pods-LeanCloudDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -366,6 +497,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ParseDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = LeanCloudDemo;
 			};
@@ -373,6 +505,7 @@
 		};
 		E023472A1B677CD3004F2DBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6D8ECF70572D1BE36DF1CE /* Pods-LeanCloudDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -380,6 +513,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ParseDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = LeanCloudDemo;
 			};

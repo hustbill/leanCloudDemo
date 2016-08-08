@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LeanCloud
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // applicationId 即 App Id，clientKey 是 App Key。
+        LeanCloud.initialize(applicationID: "WKF7diHQovKLqiDTkWG0poKb-gzGzoHsz", applicationKey: "C6WNxqRQuF3a8aQT451LSUOT")
+        let post = LCObject(className: "TestObject")
+        post.set("words", value: LCString("Hello World!"))
+        post.save { _ in }
+        
         return true
     }
 
